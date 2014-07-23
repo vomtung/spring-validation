@@ -32,7 +32,7 @@ public class AccountController {
 	}
 
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public String register(@Valid @ModelAttribute("subcriber") Sucriber sucriber,BindingResult result,Map<String, Object> mm) {
+	public String register(@ModelAttribute("subcriber") Sucriber sucriber,BindingResult result,Map<String, Object> mm) {
 
 		SucriberValidator sucriberValidator = new SucriberValidator();
 		sucriberValidator.validate(sucriber, result);
