@@ -7,7 +7,7 @@
   <form:form id="login" action="register.html" method="post" modelAttribute="subcriber">
        <table>
          <tr>
-           <td colspan="3"><h3>Sign in</h3></td>
+           <td colspan="3"><h3><spring:message code="signin" /></h3></td>
          </tr>
           <tr>
           <td><label>UserName</label></td>
