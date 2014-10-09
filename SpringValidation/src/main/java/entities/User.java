@@ -1,6 +1,6 @@
 package entities;
 
-public class Account {
+public class User {
 
 	private String username;
 	private String password;
@@ -39,14 +39,14 @@ public class Account {
 		this.age = age;
 	}
 
-	public Account(String username, String password, String email, int age) {
+	public User(String username, String password, String email, int age) {
 		this.username = username;
 		this.password = password;
 		this.email = email;
 		this.age = age;
 	}
 
-	public Account() {
+	public User() {
 	}
 
 }

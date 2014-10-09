@@ -10,13 +10,13 @@ import entities.*;
 public class AccountValidator implements Validator {
 
 	public boolean supports(Class<?> arg0) {
-		return Account.class.equals(arg0);
+		return User.class.equals(arg0);
 	}
 
 	public void validate(Object obj, Errors error) {
 
 		ValidationUtils.rejectIfEmpty(error, "username", "username.required");
-		Account acc = (Account) obj;
+		User acc = (User) obj;
 		if (error.hasFieldErrors("age"))
 			error.rejectValue("age", "age.valid");
 		if (acc.getAge() > 120 || acc.getAge() < 1)
